@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==================== FONTAWSOME CSS ====================-->
+    <link rel="stylesheet" href="style/all.min.css">
+    <!--==================== swiper-bundle CSS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- <link rel="stylesheet" href="style/swiper-bundle.min.css"> -->
+    <!--==================== CSS FILE ====================-->
+    <link rel="stylesheet" href="style/main-style.css">
+
+    <title>Responsive Portfolio Website</title>
+</head>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <div class="container">
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <a>Alexa</a>
+          </div>
+          <!-- <li id="darkMode" class="phone"><i class="fa-solid fa-moon dark"></i></li> -->
+          <div class="menu">
+            <ul>
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfloio</a></li>
+              <li><a href="#contact">Contactme</a></li>
+              <li id="darkMode"><i class="fa-solid fa-moon dark"></i></li>
+              <i id="apps" onclick="openMenuIcon()" class="uil uil-apps phone"></i>
+            </ul>
+          </div>
+        </div>
+        <ul id="icon" class="icon">
+          <li><a href="#header"><i onclick="cluseMenuIcon()" class="uil uil-estate"></i></a></li>
+          <li><a href="#about"><i onclick="cluseMenuIcon()" class="uil uil-user"></i></a></li>
+          <li><a href="#skills"><i onclick="cluseMenuIcon()" class="uil uil-file-alt"></i></a></li>
+          <li><a href="#services"><i onclick="cluseMenuIcon()" class="uil uil-suitcase"></i></a></li>
+          <li><a href="#portfolio"><i onclick="cluseMenuIcon()" class="uil uil-scenery"></i></a></li>
+          <li><a href="#contact"><i onclick="cluseMenuIcon()" class="uil uil-message"></i></a></li>
+        </ul>
+      </nav>
+      <div class="head">
+        <div class="link">
+          <div><i class="fab fa-linkedin"></i></div>
+          <div><i class="fab fa-instagram"></i></div>
+          <div><i class="fab fa-twitter"></i></div>
+        </div>
+        <div class="content">
+          <h1>
+            Hi, I'am Alexa
+          </h1>
+          <h3>Frontend developer</h3>
+          <p>High level experience in web design and development knowledge, prodcing quality work</p>
+          <button class="hero-btn">Contact Me </button>
+        </div>
+        <div class="img">
+          <svg class="back" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <mask id="mask0" mask-type="alpha">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+            </mask>
+            <g mask="url(#mask0)">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                <image class="img" x='12' y='17' href="img/perfil.png"/>
+            </g>
+        </svg>
+          <!-- <img src="img/perfil.png" alt=""> -->
+        </div>
+      </div>
+      <div class="down">
+        <button>
+          <a href="#about">
+            <i class="uil uil-mouse-alt"></i>
+            Scuoll down
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== ABOUT ====================-->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2>About me</h2>
+        <h3>My introduction</h3>
+        <div class="about-row">
+          <div class="img">
+            <img src="img/about.jpg" alt="">
+          </div>
+          <div class="content">
+            <p>Web developer, with extensive knowledge and years of experience,
+              working in web technologies and Ui / Ux design, delivering quality work.</p>
+            <div>
+              <span>
+                <h4>08+</h4>
+                <p>Years <br> experience</p>
+              </span>
+              <span>
+                <h4>20+</h4>
+                <p>Completed <br> project</p>
+              </span>
+              <span>
+                <h4>05+</h4>
+                <p>Companies <br> worked</p>
+              </span>
+            </div>
+            <button class="hero-btn">Download CV <i class="uil uil-download-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <h3>My technical level</h3>
+        <div class="skills-row">
+
+          <div class="skills-col">
+            <i class="fa-solid fa-code"></i>
+            <div>
+              <div class="intro" id="intro">
+                <div class="content">
+                  <h3>Frontend developer</h3>
+                  <p>More than 4 years</p>
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="skills-persent"> 
+                <div class="html">
+                  <div>
+                    <h4>HTML</h4>
+                    <span>90%</span>
+                  </div>
+                  <div>
+                    <div class="persent"><span class="html-persent"></span></div>
+                  </div>
+                </div>
+                <div class="css">
+                  <div>
+                    <h4>CSS</h4>
+                    <span>80%</span>
+                  </div>
+                  <div>
+                    <div class="persent"><span class="css-persent"></span></div>
+                  </div>
+                </div>
+                <div class="javascript">
+                  <div>
+                    <h4>JavaScript</h4>
+                    <span>60%</span>
+                  </div>
+                  <div>
+                    <div class="persent"><span class="js-persent"></span></div>
+                  </div>
+                </div>
+                <div class="react">
+                  <div>
+                    <h4>React</h4>
+                    <span>85%</span>
+                  </div>
+                  <div>
+                    <div class="persent"><span class="react-persent"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-col">
+            <i class="fa-solid fa-swatchbook"></i>
+            <div>
+              <div class="intro">
+                <div class="content">
+                  <h3>Designer</h3>
+                  <p>More than 5 years</p>
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="skills-persent"> 
+                <div class="figma">
+                  <div>
+                    <h4>Figma</h4>
+                    <span>90%</span>
+                  </div>
+                  <div>
+                    <div class="persent"><span class="figma-persent"></span></div>
+                  </div>
+                </div>
+                <div class="sketch">
+                  <div>
+                    <h4>Sketch</h4>
+                    <span>85%</span>
+                  </div>
+                  <div>
+                    <div class="persent"><span class="sketch-persent"></span></div>
+                  </div>
+                </div>
+                <div class="photoshop">
+                  <div>
+                    <h4>Photoshop</h4>
+                    <span>85%</span>
+                  </div>
+                  <div>
+                    <div class="persent"><span class="photoshop-persent"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="skills-col">
+            <p>icon</p>
+            <div>
+              <div class="intro">
+                <div class="content">
+                  <h3>Frontend developer</h3>
+                  <p>More than 4 years</p>
+                </div>
+                <p>icon</p>
+              </div>
+              <div class="skills-persent"> 
+                <div class="php">
+                  <div>
+                    <h4>Php</h4>
+                    <span>80%</span>
+                  </div>
+                  <div>
+                    <div class="persent"><span class="php-persent"></span></div>
+                  </div>
+                </div>
+                <div class="nodeJs">
+                  <div>
+                    <h4>Node Js</h4>
+                    <span>70%</span>
+                  </div>
+                  <div>
+                    <div class="persent"><span class="nodeJs-persent"></span></div>
+                  </div>
+                </div>
+                <div class="firebase">
+                  <div>
+                    <h4>Firebase</h4>
+                    <span>90%</span>
+                  </div>
+                  <div>
+                    <div class="persent"><span class="firebase-persent"></span></div>
+                  </div>
+                </div>
+                <div class="python">
+                  <div>
+                    <h4>Python</h4>
+                    <span>55%</span>
+                  </div>
+                  <div>
+                    <div class="persent"><span class="python-persent">                 </span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </section>
+
+    <!--==================== QUALIFICATION ====================-->
+    <section class="qualification section">
+      <div class="container">
+        <h2>qualification</h2>
+        <h3>My personal journey</h3>
+        <div class="education-work">
+          <div class="title">
+            <h4 class="title-education" id="titleEducation" onclick="openEducation()">Education</h4>
+            <h4 class="title-work" id="titleWork" onclick="openwork()">Work</h4>
+          </div>
+          <div class="education" id="education">
+            
+              <div class="after">
+                <h5>computer engineer</h5>
+                <p class="sub">peur - University</p>
+                <p class="date">2009-2014</p>
+              </div>
+              <div>
+                <div class="line"></div>
+                <div class="dote"></div>
+              </div>
+              <div class="before">
+                <div class="gap"></div>
+
+                <h5>computer engineer</h5>
+                <p class="sub">peur - University</p>
+                <p class="date">2009-2014</p>
+              </div>
+              <div class="after">
+                <h5>computer engineer</h5>
+                <p class="sub">peur - University</p>
+                <p class="date">2009-2014</p>
+              </div>
+              <div >
+                <div class="line"></div>
+                <!-- <div class="dote"></div> -->
+              </div>
+              <div class="before">
+                <div class="gap"></div>
+                <h5>computer engineer</h5>
+                <p class="sub">peur - University</p>
+                <p class="date">2009-2014</p>
+              </div>
+          </div>
+
+          <div class="work" id="work">
+              <div class="after">
+                <h5>work engineer</h5>
+                <p class="sub">peur - University</p>
+                <p class="date">2009-2014</p>
+              </div>
+              <div>
+                <div class="line"></div>
+                <div class="dote"></div>
+              </div>
+              <div class="before">
+                <div class="gap"></div>
+
+                <h5>work engineer</h5>
+                <p class="sub">peur - University</p>
+                <p class="date">2009-2014</p>
+              </div>
+              <div class="after">
+                <h5>work engineer</h5>
+                <p class="sub">peur - University</p>
+                <p class="date">2009-2014</p>
+              </div>
+              <div >
+                <div class="line"></div>
+                <!-- <div class="dote"></div> -->
+              </div>
+              <div class="before">
+                <div class="gap"></div>
+                <h5>work engineer</h5>
+                <p class="sub">peur - University</p>
+                <p class="date">2009-2014</p>
+              </div>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SERVICES ====================-->
+    <section class="services section" id="services">
+      <div class="container">
+        <h2>services</h2>
+        <h3>what I offer</h3>
+        <div class="services-row">
+          <div class="services-col">
+            <div class="icon">
+              <i class="fa-solid fa-swatchbook"></i>
+            </div>
+            <h4>Ui/Ux <br/> Designer</h4>
+            <p>view more</p>
+          </div>
+          <div class="services-col">
+            <div class="icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h4>Frontend Developer</h4>
+            <p>view more</p>
+          </div>
+          <div class="services-col">
+            <div class="icon">
+              <i class="fa-solid fa-swatchbook"></i>
+            </div>
+            <h4>Branding Designer</h4>
+            <p>view more</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== PORTFOLIO ====================-->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <h3>Most Recent Work</h3>
+        <div class="portfolio-row">
+          <div class="portfolio-col">
+            <div class="img">
+              <img src="img/portfolio1.jpg" alt="">
+            </div>
+            <div class="contend">
+              <h3>Modern Website</h3>
+              <p>Website adaptable to all devices,
+                with ui components and animated interactions.</p>
+              <button class="hero-btn">Demo <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== PROJECT IN MIND ====================-->
+    <section class="project section">
+      <div class="container">
+        <div class="card">
+          <div class="contend">
+            <h3>You have a new project</h3>
+            <p>contact me now and get a 30% discount on your new project.</p>
+            <button class="hero-btn">Contact Me</button>
+          </div>
+          <div class="img">
+            <img src="img/project.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== TESTIMONIAL ====================-->
+    <section class="testimonial section">
+      <div class="container">
+        <h2>Testimonial</h2>
+        <h3>My client saying</h3>
+        <div class="testimonial-row">
+          <div class="testimonial-col">
+            <div class="info">
+              <div>
+                <img src="img/testimonial1.jpg" alt="">
+                <h5>Sara Smith <span>client</span></h5>
+              </div>
+              <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div>
+              <p>I get a good impression,
+                Icarry out my project with all the possible quality and attention and suppport 24 hours a day.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-col">
+            <div class="info">
+              <div>
+                <img src="img/testimonial1.jpg" alt="">
+                <h5>Sara Smith <span>client</span></h5>
+              </div>
+              <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+            <div>
+              <p>I get a good impression,
+                Icarry out my project with all the possible quality and attention and suppport 24 hours a day.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== CONTACT ME ====================-->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2>Contact me</h2>
+        <h3>Get in toch</h3>
+        <div class="contact-row">
+          <div class="info">
+            <div class="call">
+              <div class="icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div>
+                <h4>Call Me</h4>
+                <p>+249-126268220</p>
+              </div>
+            </div>
+            <div class="emal">
+              <div class="icon">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>0126268220u@gmail.com</p>
+              </div>
+            </div>
+            <div class="location">
+              <div class="icon">
+                <i class="fa fa-location"></i>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>Sudan-khartoum</p>
+              </div>
+            </div>
+          </div>
+          <div class="form">
+            <form action="">
+              <input type="text" class="name" placeholder="Name">
+              <input type="email" placeholder="Email" class="email">
+              <input type="text" placeholder="Project" class="project">
+              <textarea placeholder="Message" rows="10"></textarea>
+              <button class="hero-btn">Send Message <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h1>Alexa</h1>
+          <p>Frontend developer</p>
+        </div>
+        <div class="footer-col links">
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfloio</a></li>
+            <li><a href="#contact">Contactme</a></li>
+          </ul>
+        </div>
+        <div class="footer-col icon">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+      <p>Cooded by yousef</p>
+    </div>
+  </footer>
+  
+  <!--==================== FONTAWSOME JS ====================-->
+  <script src="js/all.min.js"></script>
+
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <!--==================== MAIN JS ====================-->
+  <script src="js/main-js.js"></script>
+
+</body>
+</html>
