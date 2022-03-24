@@ -168,6 +168,13 @@ header nav .icon{
 .phone{
   display: none;
 }
+nav .icon i {
+  display: grid;
+  font-size: 15px;
+}
+nav .icon [class*='uil-']::before{
+  font-size: 22px;
+}
 @media screen and (max-width:375px){
   nav{
     position: fixed;
@@ -194,7 +201,7 @@ header nav .icon{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-content: space-evenly;
-    gap: 40px 20px;
+    gap: 25px 20px;
     position: absolute;
     z-index: 100;
     background: var(--body-color);
